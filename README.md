@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NextJS Dropbox Clone
 
-First, run the development server:
+<img src="https://github.com/Shaban-Eissa/NextJS-Dropbox-Clone/assets/49924090/effe3537-dec4-4546-850e-ebc7d7d1912d" width="400" height="80" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A clone of Dropbox built with Next.js, React, and other technologies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of Contents
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Modern Stack:** Built with Next.js, React, Firebase, Zustand and other modern web technologies.
+- **Responsive Design:** Ensures a seamless experience across various devices.
+- **Upload Functionality:** Users can upload files with any file type.
+- **User Authentication:** Secure user authentication for personalized experiences.
+- **CRUD Operations:** Users can edit filename, and can delete any file.
+- **Download Functionality:** Allows users to download files.
+- **Sort Files:** Allow users to sort files by date of uploaded files.
+- **Toast Notifications:** Display notifications for uploading, renaming, deleting files indicating the file state in app for better Developer Experience(DX).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Demo
 
-## Deploy on Vercel
+<img src="https://github.com/Shaban-Eissa/NextJS-Dropbox-Clone/assets/49924090/87ebfe1a-148b-49f7-8527-d7b88170e1ac" width="900" height="400" />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out the live demo https://next-js-dropbox-clone.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Shaban-Eissa/NextJS-Dropbox-Clone.git
+   ```
+
+2. Navigate to the project directory:
+    
+    ```bash
+    cd NextJS-Dropbox-Clone
+    ```
+    
+3. Install dependencies:
+    
+    ```bash
+    npm install
+    ```
+4. Create a new Project in Clerk https://clerk.com
+   
+5. Create .env file:
+   ```bash
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_public_key
+    CLERK_SECRET_KEY=your_clerk_secret_key
+   ```
+   replace ```you_clerk_public_key```, ```your_clerk_secret_key``` with your clerk credentials.
+
+6. Replace configs in firebase.ts with your configs:
+   ```bash
+   const firebaseConfig = {
+    apiKey: your_api_key,
+    authDomain: your_auth_domain,
+    projectId: your_project_id,
+    storageBucket: your_storage_bucket,
+    messagingSenderId: your_messaging_sender_id,
+    appId: your_app_id,
+    };
+   ```
+
+## Usage
+
+1. Start the development server:
+    
+    ```bash
+    npm run dev
+    ```
+    
+2. Open your browser and visit [http://localhost:3000](http://localhost:3000).
+    
+
+## Technologies
+
+This project utilizes a robust stack of modern technologies for efficient development and optimal user experience:
+
+- Next
+- React
+- Clerk Auth
+- Zustand
+- Firebase
+- Typescript
+- TailwindCSS
+- Next-Themes
+- React-Hot-Toast
+
+## Contributing
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature/bugfix: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
