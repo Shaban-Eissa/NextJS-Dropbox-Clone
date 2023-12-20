@@ -72,7 +72,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="mt-20">
-        <div className="flex justify-center space-x-5">
+        <div className="flex justify-center space-x-5 flex-wrap">
           <span className="font-medium text-white">Demo</span>
           <span className="font-medium text-white">Support</span>
           <span className="font-medium text-white">Privacy Policy</span>

@@ -110,9 +110,9 @@ const TableWrapper = ({ skeletonFiles }: { skeletonFiles: FileType[] }) => {
   };
   const sortedFiles = [...initialFiles].sort((a, b) => {
     if (sort === "asc") {
-      return a.timestamp < b.timestamp ? -1 : 1;
-    } else {
       return a.timestamp > b.timestamp ? -1 : 1;
+    } else {
+      return a.timestamp < b.timestamp ? -1 : 1;
     }
   });
 
