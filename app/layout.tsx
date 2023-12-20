@@ -19,7 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        elements: {
+          footer: "hidden",
+        },
+      }}
+    >
       <html lang="en">
         <body className={inter.className}>
           <ThemeProvider
